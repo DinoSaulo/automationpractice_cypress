@@ -1,0 +1,46 @@
+{
+    "SIGNIN": {
+      "EMAIL_INPUT": "[id=email]",
+      "PASSWORD_INPUT": "[id=passwd]",
+      "SIGNIN_BTN": "[id=SubmitLogin]"
+    },
+    "REGISTER": {
+      "EMAIL_INPUT": "[id=email_create]",
+      "CREATE_BTN": "[id=SubmitCreate]",
+      "FORM_CONTAINER": "[id=account-creation_form]",
+      "MR_CHECKBOX": "#uniform-id_gender1",
+      "MRS_CHECKBOX": "#uniform-id_gender2",
+      "FIRST_NAME_INPUT": "#customer_firstname",
+      "LAST_NAME_INPUT": "#customer_lastname",
+      "EMAIL_FORM_INPUT": "#email",
+      "PASSWORD_INPUT": "#passwd",
+      "DAY_BIRTH_INPUT": "#days",
+      "MONTH_BIRTH_INPUT": "#months",
+      "YEAR_BIRTH_INPUT": "#years",
+      "NEWSLETTER_CHECKBOX": "#newsletter"
+    },
+    "FOOTER": {
+      "NEWSLETTER_INPUT": "[id=newsletter-input]",
+      "NEWSLETTER_BUTTON": "[name=submitNewsletter]",
+      "SOCIAL_CONTAINER": "[id=social_block]",
+      "INFO_SECTION": "[id=block_various_links_footer]",
+      "CONTACT_SECTION": "[id=block_contact_infos]"
+    },
+    "MENU":{
+      "FN_XP_BTN_CATEGORY": "LALAL"
+    },
+    "LOGO": {
+      "XP_ICON": "//div[id=header_logo]//a"
+    },
+    "SEARCH": {
+      "TEXT_INPUT": "[id=search_query_top]",
+      "BUTTON": "button[name=submit_search]"
+    },
+    "CART": {
+      "XP_BUTTON": "//div[contains(@class,'shopping_cart')]/a"
+    },
+    "NAVBAR": {
+      "CONTACT": "[id=contact-link]",
+       "XP_SIGNIN": "//a[contains(@class,'login')]"
+    }
+}

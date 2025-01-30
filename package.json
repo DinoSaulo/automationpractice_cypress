@@ -4,12 +4,9 @@
   "description": "A simple project to automatize some tests in www.automationpractice.pl",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
+    "test": "npx cypress run --spec cypress\\e2e\\feature\\login.feature",
     "test:chrome": "cypress run --browser chrome --no-exit",
     "test:electron": "cypress run --browser electron --no-exit"
-  },
-  "cypress-cucumber-preprocessor": {
-      "step_definitions": "cypress/support/steps"
   },
   "repository": {
     "type": "git",
@@ -24,8 +21,27 @@
     "url": "https://github.com/DinoSaulo/automationpractice_cypress/issues"
   },
   "homepage": "https://github.com/DinoSaulo/automationpractice_cypress#readme",
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/Reports/cucumber-reports/cucumberResult.json"
+    },
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/step_definations/*.{js,ts}",
+      "cypress/e2e/common/*.{js,ts}",
+      "cypress/e2e/[filepath]/**/*.{js,ts}",
+      "cypress/e2e/[filepath].{js,ts}",
+      "cypress/support/step_definitions/**/*.{js,ts}"
+    ]
+  },
   "devDependencies": {
-    "cypress": "^14.0.1",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.12.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-real-events": "^1.8.1"
   }
 }
