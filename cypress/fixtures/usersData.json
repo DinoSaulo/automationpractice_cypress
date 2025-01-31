@@ -1,5 +1,6 @@
 {
   "email": "lambdatest@yopmail.com",
+  "invalidEmail": "lambdatest yopmail. com",
   "password": "lambdatest",
-  "title": "Search -"
+  "successRegistrationMsg": "Your account has been created."
 }

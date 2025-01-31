@@ -8,8 +8,8 @@
       "EMAIL_INPUT": "[id=email_create]",
       "CREATE_BTN": "[id=SubmitCreate]",
       "FORM_CONTAINER": "[id=account-creation_form]",
-      "MR_CHECKBOX": "#uniform-id_gender1",
-      "MRS_CHECKBOX": "#uniform-id_gender2",
+      "MR_CHECKBOX": "#id_gender1",
+      "MRS_CHECKBOX": "#id_gender2",
       "FIRST_NAME_INPUT": "#customer_firstname",
       "LAST_NAME_INPUT": "#customer_lastname",
       "EMAIL_FORM_INPUT": "#email",
@@ -17,7 +17,8 @@
       "DAY_BIRTH_INPUT": "#days",
       "MONTH_BIRTH_INPUT": "#months",
       "YEAR_BIRTH_INPUT": "#years",
-      "NEWSLETTER_CHECKBOX": "#newsletter"
+      "NEWSLETTER_CHECKBOX": "#newsletter",
+      "REGISTER_BTN": "#submitAccount"
     },
     "FOOTER": {
       "NEWSLETTER_INPUT": "[id=newsletter-input]",
@@ -42,5 +43,8 @@
     "NAVBAR": {
       "CONTACT": "[id=contact-link]",
        "XP_SIGNIN": "//a[contains(@class,'login')]"
+    },
+    "USER_PROFILE": {
+      "CONTAINER": "#center_column"
     }
 }
